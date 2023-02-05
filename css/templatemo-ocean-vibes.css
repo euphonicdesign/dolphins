@@ -661,3 +661,7 @@ address {
         margin-left: 30px;
     }
 }
+
+header img {
+    float: right;
+}
