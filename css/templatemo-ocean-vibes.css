@@ -22,6 +22,10 @@ h2, p {
 
 a:hover, a.active { color: #309AFD; }
 
+#unique-game {
+    margin: 0 auto;
+}
+
 .tm-btn {
     padding: 10px 40px;
     color: white;
