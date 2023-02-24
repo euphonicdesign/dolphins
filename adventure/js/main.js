@@ -60,9 +60,11 @@ for(var c=0; c<brickColumnCount; c++) {
 var score = 0;
 var lives = 3;
 
-var cadru_curent = 0;
+let cadru_curent = 0;
 
 let capitolSelectat = 1;
+
+cadre = cadre_ch1;
 
 /*
 if(capitolSelectat == 1){
