@@ -87,7 +87,7 @@ content.appendChild(canvas);
  //incarcare imagine
  img.addEventListener("load", loadImage, false);
  function loadImage(e) {
-    
+    console.log(e);
     ctx.drawImage(img, 60, 0, imgWidth * dog.size / 100, imgHeight * dog.size / 100);
  }
 
