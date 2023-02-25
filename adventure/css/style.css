@@ -1,0 +1,76 @@
+/** {
+  padding: 0;
+  margin: 0;
+}*/
+canvas {
+  background: #eee;
+  display:inline;
+  /*display: block;
+  margin: 1em auto 1em auto;*/
+}
+body {
+  width: 1400px;
+  margin: 1em auto 1em auto;
+}
+
+button {
+  margin: 1em auto 1em auto;
+  padding: 7px;
+  border: 0;
+  border-radius: 5px !important;
+  font-weight: 200;
+}
+button:hover {
+  background: lightblue;
+}
+
+p {
+  /* font-family: Verdana, Arial, sans-serif; */
+  text-align: justify;
+  line-height: 1.3em;
+  /*letter-spacing: .01em;*/
+  font-weight: 400;
+  border-bottom: 1px solid #333;
+}
+
+p#text-box {
+  height: 140px;
+}
+
+.pagina-story {
+  margin: 22px 12px;
+}
+
+div.continut-sus {
+  display:flex;
+  /*border: 2px solid #333;*/
+}
+div.continut-sus-stanga {
+  /* font-family: Verdana, Arial, sans-serif; */
+  text-align: justify;
+  line-height: 1.6em;
+  /*letter-spacing: .01em;*/
+  font-weight: 100;
+  padding-right: 2em;
+  padding-left: 2em;
+  padding-bottom: 2em;
+  /* border: 1px dotted #333; */
+  width: 500px;
+}
+
+h1 {
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+  line-height: 1.2em;
+}
+
+div.continut-sus-dreapta {
+  display: inline;
+}
+
+div.pagina-story {
+  /*border: 2px solid #333;*/
+}
+
+.continut-jos {
+  margin: 12px 34px;
+}

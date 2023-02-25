@@ -1,0 +1,18 @@
+.content {
+    height: 300px;
+}
+
+.pet {
+    max-width: 20%;
+    height: auto;
+}
+
+.stats-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.wrapper {
+    display: flex;
+    padding-top: 20px;
+}
