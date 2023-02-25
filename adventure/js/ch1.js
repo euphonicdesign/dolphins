@@ -6,13 +6,13 @@ var cadre_ch1 = [
       nr_cadru: 0,
       activat: false,
       vizitat: false,
-      pozitieIntrareX: 300, //pozitia jucatorului
-      pozitieIntrareY: 340,
+      pozitieIntrareX: 280, //pozitia jucatorului
+      pozitieIntrareY: 300,
       entries:[ //link-uri celelalte cadre - pozitia cercurilor
-        {nr_cadru: 1, x:310, y:40}, //attic
-        {nr_cadru: 2, x:270, y:400}, //riverside
+        {nr_cadru: 1, x:280, y:200}, //attic
+        {nr_cadru: 2, x:360, y:320}, //riverside
         {nr_cadru: 5, x:40, y:250}, //tree
-        {nr_cadru: 4, x:530, y:260}, //tree
+        {nr_cadru: 4, x:530, y:260}, //cave
       ],
       textPrim:
         "The story begins here... Once upon a time... \
