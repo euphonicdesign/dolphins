@@ -26,9 +26,9 @@ a:hover, a.active { color: #309AFD; }
     margin: 0 auto;
 } */
 
-/* #inline-popups li {
+#inline-popups li {
     margin: 0 auto;
-} */
+}
 
 .tm-btn {
     padding: 10px 40px;
@@ -144,7 +144,7 @@ a {
 .tm-main-nav ul {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 400px;
+    margin-left: auto;
     margin-right: auto;
 }
 
