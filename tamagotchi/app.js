@@ -55,6 +55,13 @@ class Dog {
 
 const dog = new Dog();
 
+ //incarcare imagine
+ img.addEventListener("load", loadImage, false);
+ function loadImage(e) {
+    console.log(e);
+    ctx.drawImage(img, 60, 0, imgWidth * dog.size / 100, imgHeight * dog.size / 100);
+ }
+
 setInterval(()=>{
     // console.log(dog.hunger, dog.boredom, dog.neatness, dog.size);
     dog.metabolyze();
@@ -84,12 +91,7 @@ ctx.fillStyle = "#eee";
 ctx.fillRect(60, 0, canvas.width, canvas.height);
 content.appendChild(canvas);
 
- //incarcare imagine
- img.addEventListener("load", loadImage, false);
- function loadImage(e) {
-    console.log(e);
-    ctx.drawImage(img, 60, 0, imgWidth * dog.size / 100, imgHeight * dog.size / 100);
- }
+
 
 feedBtn.addEventListener("click", ()=>{
     dog.feed();
