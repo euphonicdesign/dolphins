@@ -14,14 +14,15 @@ const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 canvas.width=300;
 canvas.height=200;
+ctx.fillStyle = "#eee";
+ctx.fillRect(50, 0, canvas.width, canvas.height);
 
 let img = new Image();
 img.src = "./img/dog.png";
 img.onload = function(){
     ctx.drawImage(img, 50, 0, img.width * 0.3, img.height * 0.3);
 } 
-ctx.fillStyle = "#eee";
-ctx.fillRect(50, 0, canvas.width, canvas.height);
+
 
 class Dog {
     constructor(){
