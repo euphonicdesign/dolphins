@@ -9,19 +9,19 @@ const feedBtn = document.querySelector(".feed-btn");
 const playBtn = document.querySelector(".play-btn");
 const cleanBtn = document.querySelector(".clean-btn");
 
-const img = new Image();
-img.src = "./img/dog.png";
 
-const imgWidth = img.width;
-const imgHeight = img.height;
-
-const canvas = document.createElement('canvas');
+const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 canvas.width=300;
 canvas.height=200;
+
+let img = new Image();
+img.src = "./img/dog.png";
+img.onload = function(){
+    ctx.drawImage(img, 50, 0, img.width * 0.3, img.height * 0.3);
+} 
 ctx.fillStyle = "#eee";
 ctx.fillRect(50, 0, canvas.width, canvas.height);
-content.appendChild(canvas);
 
 class Dog {
     constructor(){
@@ -83,7 +83,7 @@ class Dog {
     updateCanvas(){
         ctx.fillStyle = "#eee";
         ctx.fillRect(50, 0, canvas.width, canvas.height);
-        ctx.drawImage(img, 50, 0, imgWidth * this.size / 100, imgHeight * this.size / 100);
+        ctx.drawImage(img, 50, 0, img.width * this.size / 100, img.height * this.size / 100);
     }
 
     updateStats(){
@@ -102,18 +102,12 @@ class Dog {
         if(this.hungryFlag && !message.innerHTML.includes("hungry")){
             message.innerHTML += "I am hungry! ";
         }
-
     }
 }
 
 const dog = new Dog();
 
- //incarcare imagine
- img.addEventListener("load", loadImage, false);
- function loadImage(e) {
-    //console.log(e);
-    ctx.drawImage(img, 50, 0, imgWidth * dog.size / 100, imgHeight * dog.size / 100);
- }
+
 
 setInterval(()=>{
     // console.log(dog.hunger, dog.boredom, dog.neatness, dog.size);
