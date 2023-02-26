@@ -30,6 +30,10 @@ a:hover, a.active { color: #309AFD; }
     margin: 0 auto;
 }
 
+.chat-btn {
+    border-radius: 5px;
+}
+
 .tm-btn {
     padding: 10px 40px;
     color: white;
