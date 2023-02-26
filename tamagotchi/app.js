@@ -74,7 +74,7 @@ class Dog {
         } else{
             this.hungryFlag = false;
         }
-        if(this.neatness > 30){
+        if(this.neatness < 30){
             this.dirtyFlag = true;
         } else{
             this.dirtyFlag = false;
@@ -102,6 +102,9 @@ class Dog {
         }
         if(this.hungryFlag && !message.innerHTML.includes("hungry")){
             message.innerHTML += "I am hungry! ";
+        }
+        if(this.dirtyFlag && !message.innerHTML.includes("wash")){
+            message.innerHTML += "I need a good wash! ";
         }
     }
 }
