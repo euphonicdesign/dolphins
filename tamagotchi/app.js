@@ -41,8 +41,8 @@ class Dog {
     }
     updateCanvas(){
         ctx.fillStyle = "#eee";
-        ctx.fillRect(60, 0, canvas.width, canvas.height);
-        ctx.drawImage(img, 60, 0, imgWidth * this.size / 100, imgHeight * this.size / 100);
+        ctx.fillRect(50, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 50, 0, imgWidth * this.size / 100, imgHeight * this.size / 100);
     }
 
     updateStats(){
@@ -59,7 +59,7 @@ const dog = new Dog();
  img.addEventListener("load", loadImage, false);
  function loadImage(e) {
     console.log(e);
-    ctx.drawImage(img, 60, 0, imgWidth * dog.size / 100, imgHeight * dog.size / 100);
+    ctx.drawImage(img, 50, 0, imgWidth * dog.size / 100, imgHeight * dog.size / 100);
  }
 
 setInterval(()=>{
