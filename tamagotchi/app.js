@@ -84,7 +84,10 @@ class Dog {
     updateCanvas(){
         ctx.fillStyle = "#eee";
         ctx.fillRect(50, 0, canvas.width, canvas.height);
-        ctx.drawImage(img, 50, 0, img.width * this.size / 100, img.height * this.size / 100);
+        ctx.drawImage(img, 
+            canvas.width / 2 - (img.width * this.size /100) / 2,
+            canvas.height / 2 - (img.height * this.size /100) / 2, 
+            img.width * this.size / 100, img.height * this.size / 100);
     }
 
     updateStats(){
