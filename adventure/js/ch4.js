@@ -691,7 +691,7 @@ function getStoryChapter4(name) {
                     },
                 },
                 {
-                    choice: "give seeds",
+                    choice: "offer seeds",
                     destination: "pub",
                     story: `
                     You have no seeds. The bird jumps on your head and starts messing with your hair...
@@ -1720,7 +1720,7 @@ function getStoryChapter4(name) {
         },
 
         watch_river: {
-            image: "whatch river.jpg",
+            image: "watch river.jpg",
             story: `
             `,
             story2flag: false,
