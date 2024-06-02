@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat With Ai</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Chat With Ai</h1>
+    <form action="http://localhost:3000/chatwithai" method="POST">
+      <div>
+        <label for="message-box">Message</label>
+        <textarea name="msg" id="message-box" rows="7"></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+    <section class="responses-container">
+      <ol class="bot-responses"></ol>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

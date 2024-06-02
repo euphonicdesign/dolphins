@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+form {
+  width: 400px;
+  background-color: bisque;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 6px;
+  text-align: start;
+}
+
+form textarea {
+  display: block;
+  width: 100%;
+}
+
+.responses-container {
+  width: 400px;
+  text-align: start;
+  margin: 0 auto;
+  background-color: beige;
+}
+
+li {
+  padding: 0.5rem;
+}
