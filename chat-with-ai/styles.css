@@ -15,6 +15,7 @@ form {
 form textarea {
   display: block;
   width: 100%;
+  font-family: inherit;
 }
 
 .responses-container {
