@@ -4,7 +4,7 @@ body {
 }
 
 form {
-  width: 400px;
+  max-width: 400px;
   background-color: bisque;
   margin: 0 auto;
   padding: 2rem;
