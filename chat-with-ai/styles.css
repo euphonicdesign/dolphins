@@ -27,3 +27,9 @@ form textarea {
 li {
   padding: 0.5rem;
 }
+
+.note {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 0;
+}
