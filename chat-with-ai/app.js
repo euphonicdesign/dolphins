@@ -8,7 +8,7 @@ formElement.addEventListener("submit", (e) => {
   const message = formElement.elements.msg.value;
   console.log("Form submitted: " + formElement.elements.msg.value);
 
-  const url = "http://localhost:3000/chatwithai";
+  const url = "https://node-box.onrender.com/chatwithai";
 
   let data = {
     msg: message,
