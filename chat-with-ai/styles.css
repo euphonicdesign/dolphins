@@ -19,7 +19,7 @@ form textarea {
 }
 
 .responses-container {
-  width: 400px;
+  max-width: 400px;
   text-align: start;
   margin: 0 auto;
   background-color: beige;
